@@ -1,12 +1,12 @@
 import random
 
-n = random.randint(1,10)
+n = random.randint(0,20)
 
-print("I am thinking of a number between 1 and 10")
+print("I am thinking of a number between 0 and 20")
 
 while True:
     try:
-        guess_str = input("Enter a number ")
+        guess_str = input("GUESS WHAT NUMBER ")
         guess = int(guess_str)
         if guess == n:
             print("Well done!")
@@ -16,4 +16,4 @@ while True:
         else:
             print("Try a smaller number")
     except ValueError:
-        print("Please enter a number.")
+        print("ERROR! Input not in range!")
